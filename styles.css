@@ -1,0 +1,247 @@
+html {
+	background: #060606;
+	margin: 0;
+	padding: 0;
+	animation: fade-in .5s linear;
+}
+@keyframes fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+body {
+}
+p {
+	margin: 0px;
+}
+ul, li {
+	padding: 0;
+	margin: 0;
+}
+
+li a {
+	text-decoration:none;
+}
+
+li a:visited {
+	color:	#FAFAFA;
+}
+
+li a:active {
+	color:	#FAFAFA;
+}
+
+
+.top-scroll-menu {
+	position: fixed;
+	color: #FAFAFA;
+	font-size: 18px;
+	line-height: 20px;
+	font-family: Hiruko Pro Alternate;
+	font-weight: bold;
+	margin: -122px -2px;
+	background: #060606;
+}
+
+.top-scroll-menu.hidden {
+    display: none;
+}
+
+.top-scroll-menu ul{
+	list-style: none;
+	border: 2px solid #FAFAFA;
+}
+
+.top-scroll-menu li{
+	margin: 21px;
+}
+
+.top-scroll-menu-socials  {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 132px;
+	justify-content: center;
+	align-content: center;
+}
+
+.top-scroll-menu-socials img {
+	border: 2px solid #FAFAFA;
+	padding: 1px;
+}
+
+.content {
+	margin: 120px auto;
+	width: 1200px;
+	height: 2560px;
+	border: 2px solid #FAFAFA;
+	
+}
+
+.top-logo {
+	display: flex;
+	justify-content: space-between;
+}
+
+.top-logo img{
+	display: flex;
+	justify-content: space-between;
+}
+
+.top-player {
+	display: flex;
+	height: 30px;	
+}
+
+.top-player-play, .top-player-pause{
+	width: 30px;
+	box-shadow: 0px 0px 0px 2px #FAFAFA;
+	width: 30px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-player-pause {
+	display: none;
+}
+
+.top-player-trackName {
+	box-shadow: 2px 2px 0px 0px #FAFAFA;
+	width: 330px;
+	color: #FAFAFA;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Hiruko Pro Alternate;
+}
+
+.content-hello {
+	display: flex;
+	justify-content: center;
+	margin-top: 70px;
+	
+}
+
+.new-release {
+	font-family: 'Hiruko Pro Alternate';
+    font-size: 70px;
+    line-height: 90px;
+    color: #FAFAFA;
+	width: 480px;
+    margin-top: 172px;
+    margin-left: 238px;
+    letter-spacing: 0.035em;
+    display: flex;
+}
+
+.album-center {
+	margin-left: 240px;
+	margin-top: 25px;
+
+}
+.album-center img {
+	width: 600px;
+}
+
+.layer-behind-album {
+	display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 844px;
+    position: absolute;
+    z-index: -1;
+}
+.layer-behind-album img {
+	width: 360px;
+}
+
+.layer-behind-album-block {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.layer-behind-album-block-text {
+	width: 210px;
+	border: 2px solid #FAFAFA;
+	padding: 15px 15px 0 15px;
+}
+
+p {
+	padding-bottom: 27px;
+	word-spacing: 9px;
+	color: #FAFAFA;
+	font-family: Hiruko Pro Alternate;
+	font-size: 17px;
+	line-height: 20px;
+	letter-spacing: 0.01em;
+}
+
+.layer-behind-album-block-listen {
+	border: 2px solid #FAFAFA;
+	margin-top: -2px;
+	line-height: 0;
+	font-size: 0;
+}
+
+.layer-behind-album-block-listen img  {
+	width: 116px;
+	height: 27px;
+}
+
+.layer-behind-album-block-listen-2 {
+	margin-left: 119px;
+}
+
+.layer-behind-album-block-listen-2 img {
+	box-shadow: 0px 0px 0px 2px #FAFAFA;
+	padding: 7px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    margin-top: 115px;
+}
+
+
+.layer-behind-bottom {
+	width: 480px;
+	display: flex;
+    flex-wrap: wrap;
+}
+
+.layer-behind-bottom-text {
+	width: 330px;
+	border: 2px solid #FAFAFA;
+	padding: 15px 15px 0 15px;
+	margin-left: 117px;
+}
+
+@Font-face {
+	font-family: 'Hiruko Pro Alternate';
+	src: url(HirukoPro-ExtraLight.otf), url(HirukoProAlternate-Light.otf),
+	url(HirukoPro-ExtraLight.otf), url('HirukoPro-Light');
+}
+
+/* ticker бегущая строка*/
+.ticker {
+    display: block;
+    white-space: nowrap;
+	overflow: hidden;
+	color: #FAFAFA;
+}
+ 
+.ticker span {
+	margin-top: 6px;
+    display: inline-block;
+    padding-left: 100%;
+    -webkit-animation: scroll 10s infinite linear;
+    -moz-animation: scroll 10s infinite linear;
+    animation: scroll 10s infinite linear;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0)
+    }
+}

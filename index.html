@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href="styles.css" rel="stylesheet" >
+	<title>LUNAAR</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="content">
+	<!-- scroll menu -->
+	<div class="top-scroll-menu hidden">
+		<ul>
+			<li><a href="">ABOUT</a></li>
+			<li><a href="">RELEASES</a></li>
+			<li><a href="">EVENTS</a></li>
+			<li><a href="">ARTISTS</a></li>
+			<li><a href="">SHOP</a></li>
+			<li><a href="">CONTACT</a></li>
+		</ul>
+			<div class="top-scroll-menu-socials">
+			<img src="FB.png" alt="fb">
+			<img src="IG.png" alt="ig">
+			<img src="hz.png" alt="hz">
+			<img src="SC.png" alt="sc">
+			</div>
+	</div>
+	<!-- scroll menu -->
+		<div class="top-logo">
+			<img src="top-logo.png" alt="logo" style="box-shadow: 0px 0px 0px 2px #FAFAFA;">
+			<div class="top-player">
+				<div class="top-player-play" onclick="document.querySelector('.player').play(); document.querySelector('.top-player-play').style.display = 'none'; document.querySelector('.top-player-pause').style.display = 'flex'">
+						<img src="button-play.png" alt="play">
+						<audio class="player" src="BuryAFriend.mp3"></audio>
+				</div>
+				<div class="top-player-pause" onclick="document.querySelector('.player').pause(); document.querySelector('.top-player-pause').style.display = 'none'; document.querySelector('.top-player-play').style.display = 'flex'">
+						<img src="button-pause.png" alt="pause">
+						<audio class="player" src="BuryAFriend.mp3"></audio>
+				</div>
+				<div class="top-player-trackName ticker">
+					<span>Lunaar - Journey To Mancora</span>
+				</div>
+			</div>
+		</div>
+		<div class="content-hello">
+			<img src="img_hello.png" alt="pict">		
+		</div>
+
+		<div class="new-release"><img src="new-release.png" alt="new-release">
+		<div class="layer-behind-album"><img src="layer-behind.png" alt="stone">
+		<div class="layer-behind-album-block">
+			<div class="layer-behind-album-block-text">
+			<p>This track was done by creative project from Russia dolor sit amet, consectetur adipiscing elit. In a orci aliquam lectus accumsan pharetra et eu erat.</p><p>Morbi consequat eros velit, vitae fringilla quam vestibulum vitae. Fusce pretium, nulla at euismod dapibus, dui orci lacinia mauris, ut convallis risus nisl ut urna.</p><p>Donec pharetra venenatis libero nec pretium. Pellentesque pretium orci congue ornare ornare. Praesent sit <a href=""></a>met nunc eu libero vehicula ultricies, fusce pretium libero</p>
+			</div>
+			<div class="layer-behind-album-block-listen">
+				<img src="listen.png" alt="listen_now">
+			</div>
+		</div>
+		</div>
+		</div>
+		<div class="album-center"><img src="album.png" alt="album"></div>
+		<div class="bottom">
+			<div class="layer-behind-bottom">
+				<img src="layer-lunaar.png" alt="layer-lunaar" style="width: 353px;">
+				<div class="layer-behind-bottom-text">
+				<p>This track was done by creative project from Russia dolor sit amet, consectetur adipiscing elit. In a orci aliquam lectus accumsan pharetra et eu erat.</p><p>Morbi consequat eros velit, vitae fringilla quam vestibulum vitae. Fusce pretium, nulla at euismod dapibus, dui orci lacinia mauris, ut convallis risus nisl ut urna.</p><p>Donec pharetra venenatis libero nec pretium. Pellentesque pretium orci congue ornare ornare. Praesent sit amet nunc eu libero vehicula ultricies, fusce pretium libero </p><p>This track was done by creative project from Russia dolor sit amet, consectetur adipiscing elit. In a orci aliquam lectus accumsan pharetra et eu erat.</p>
+				</div>
+				<div class="layer-behind-album-block-listen-2"><img src="CHECK THIS PROJECT.png" alt="check-this-project"></div>
+			</div>
+			<img src="band-photo.png" alt="band-photo" style="width: 480px; height: 460px; margin-top: 82px; box-shadow: 0 2px 0px 0 #FEE04A;">
+		</div>
+	<div>
+	
+
+<script>
+$(document).ready(function(){
+var $win = $(window),
+    $fixed = $(".top-scroll-menu"),
+    limit = 300;
+
+function tgl (state) {
+    $fixed.toggleClass("hidden", state);
+}
+
+$win.on("scroll", function () {
+    var top = $win.scrollTop();
+    
+    if (top < limit) {
+        tgl(true);
+    } else {
+        tgl(false);
+    }
+});
+});
+</script>
+
+</body>
+</html>	
